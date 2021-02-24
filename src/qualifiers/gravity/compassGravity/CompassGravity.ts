@@ -7,7 +7,7 @@ import {CompassQualifier} from "../qualifiers/compass/CompassQualifier";
  * @extends {Qualifiers.Gravity.GravityQualifier}
  */
 class CompassGravity extends GravityQualifier {
-  constructor(dir: CompassQualifier) {
+  constructor(dir: CompassQualifier | string) {
     // Required due to https://github.com/microsoft/TypeScript/issues/13029
     /* istanbul ignore next */
     super(dir);

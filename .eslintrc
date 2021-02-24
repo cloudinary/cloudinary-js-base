@@ -18,7 +18,6 @@
     "jest": true
   },
   "rules": {
-    "require-jsdoc": "error",
     "no-unused-vars": "warn",
     "indent" : ["error", 2, { "SwitchCase": 1 }],
     "dot-notation" : "error",
