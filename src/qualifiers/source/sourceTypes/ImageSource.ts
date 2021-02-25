@@ -1,5 +1,6 @@
 import {BaseSource} from "../BaseSource";
 import {FormatQualifier} from "../../format/FormatQualifier";
+import {Action} from "../../../internal/Action";
 
 /**
  * @memberOf Qualifiers.Source
@@ -24,6 +25,13 @@ class ImageSource extends BaseSource {
   constructor(publicID: string) {
     super();
     this._publicID = publicID;
+  }
+
+  transform(...actions: Action[]): this {
+    actions.forEach((action) => {
+      this._transformation.addAction(action);
+    });
+    return this;
   }
 
   /**

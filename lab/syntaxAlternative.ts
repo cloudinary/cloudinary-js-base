@@ -1,41 +1,14 @@
 import {createNewImage} from "../__TESTS__/TestUtils/createCloudinaryImage";
 import {CompassGravity} from "../src/qualifiers/gravity/compassGravity/CompassGravity";
-import {Action} from "../src/internal/Action";
-import {ExpressionQualifier} from "../src/qualifiers/expression/ExpressionQualifier";
-import {Overlay} from "../src/actions/overlay";
 import {ImageSource} from "../src/qualifiers/source/sourceTypes/ImageSource";
-import {BlendMode} from "../src/qualifiers/blendMode";
+import {fill} from "./actions/fill";
+import {crop} from "./actions/crop";
+import {overlay} from "./actions/overlay";
+import {saturation} from "./actions/saturation";
+import {vignette} from "./actions/vignette";
+import {roundCorners} from "./actions/roundCorners";
 
-type IFill = {aspectRatio?: string, width?: number | ExpressionQualifier, height?: number | ExpressionQualifier, gravity: CompassGravity};
-
-function fill(fillObject: IFill): Action;
-function fill(width:number, height:number): Action;
-function fill(fillObject: any, height?: any): Action {
-  return new Action();
-}
-
-
-
-createNewImage().overlay(Overlay.source().blendMode().position().timeline())
-
-
-//
-// expect(BlendMode.screen().toString()).toBe('e_screen');
-// expect(BlendMode.multiply().toString()).toBe('e_multiply');
-// expect(BlendMode.overlay().toString()).toBe('e_overlay');
-// expect(BlendMode.mask().toString()).toBe('e_mask');
-// expect(BlendMode.antiRemoval().toString()).toBe('e_anti_removal');
-
-
-type IOverlay = {
-  source: ImageSource,
-  blendMode: 'screen' | 'multiply' | 'overlay' | 'mask' | 'anti_removal',
-  timelinePosition: '',
-}
-
-function overlay(obj: IOverlay) {
-
-}
+// createNewImage().overlay(Overlay.source().blendMode().position().timeline())
 
 createNewImage('sample')
   .transform(
@@ -43,15 +16,25 @@ createNewImage('sample')
     fill({
       width: 400,
       height:250,
-      gravity: new CompassGravity('south')
+      gravity: new CompassGravity('east')
     }),
     overlay({
-      source: new ImageSource('foo')
-      blendMode: '',
-      timelinePosition: '',
+      source: new ImageSource('sample').transform(
+        crop({
+          width: 100,
+          height: 100
+        })
+      ),
+      blendMode: 'screen',
+      relative: 'regionRelative'
+    }),
+    saturation(),
+    vignette(),
+    roundCorners(),
 
-    })
   );
+
+
 
 // (new ImageTag('coffee_cup.jpg'))
 // ->resize(Resize::fill()->width(400)->height(250)->gravity(Gravity::compass(Compass::south())))
@@ -59,9 +42,13 @@ createNewImage('sample')
 // ->overlay(
 //   Overlay::source(Source::image('nice_couple')
 // ->transformation((new ImageTransformation())
-// ->resize(Resize::crop()->width(1.3)->height(1.3)
-// ->gravity(Gravity::focusOn(FocusOn::faces()))
-// ->regionRelative())
+//    ->resize(Resize::crop()->width(1.3)->height(1.3)
+//
+//    ->gravity( Gravity::focusOn(FocusOn::faces()) )
+//
+//    ->regionRelative()
+//
+//    )
 // ->adjust(Adjust::saturation()->level(50))
 // ->effect(Effect::vignette())
 // ->resize(Resize::scale()->width(100))
