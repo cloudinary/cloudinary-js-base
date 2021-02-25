@@ -36,6 +36,15 @@ describe('Tests for Encoding the URL', () => {
       .toBe('https://res.cloudinary.com/demo/image/upload/l_text:arial_50:he%20llo/fl_layer_apply/sample');
   });
 
+  it('Should encode emojis in text of a textLayer', () => {
+    const url = createNewImage('sample')
+      .overlay(Overlay.source(text( "😁♂", sampleEmptyTextStyle())))
+      .toURL();
+
+    expect(url)
+      .toBe('https://res.cloudinary.com/demo/image/upload/l_text:arial_50:%25F0%259F%2598%2581%E2%99%82/fl_layer_apply/sample');
+  });
+
   it('Should encode font name in textOverlay', () => {
     const cldImage = createNewImage('sample')
       .overlay(Overlay.source(text('he llo', sampleEmptyTextStyle('roboto condensed'))));
