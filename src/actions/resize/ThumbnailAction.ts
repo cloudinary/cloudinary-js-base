@@ -1,5 +1,6 @@
 import {Qualifier} from "../../internal/qualifier/Qualifier";
 import ResizeAdvancedAction from "./ResizeAdvancedAction";
+import {toFloatAsString} from "../../internal/utils/toFloatAsString";
 
 /**
  * @description Defines a thumbnail resize action.
@@ -13,7 +14,7 @@ class ThumbResizeAction extends ResizeAdvancedAction {
    * @param {number | string} z The zoom factor. (Default: 1.0)
    */
   zoom(z: number | string): this {
-    return this.addQualifier(new Qualifier('z', z));
+    return this.addQualifier(new Qualifier('z', toFloatAsString(z)));
   }
 }
 

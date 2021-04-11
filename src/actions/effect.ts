@@ -24,6 +24,7 @@ import {FadeInEffectAction} from "./effect/leveled/fadeIn";
 import {RemoveBackgroundAction} from "./effect/removeBackgroundAction";
 import {ThemeEffect} from "./effect/theme";
 import {SystemColors} from "../qualifiers/color";
+import {toFloatAsString} from "../internal/utils/toFloatAsString";
 
 
 /**
@@ -282,7 +283,7 @@ function loop(additionalLoops?: number):LoopEffectAction {
  * @return {Actions.Effect.MakeTransparentEffectAction}
  */
 function makeTransparent(tolerance?: number):MakeTransparentEffectAction {
-  return new MakeTransparentEffectAction('make_transparent', tolerance);
+  return new MakeTransparentEffectAction('make_transparent', tolerance && toFloatAsString(tolerance));
 }
 
 

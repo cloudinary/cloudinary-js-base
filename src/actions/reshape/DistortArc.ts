@@ -1,5 +1,6 @@
 import {Action} from "../../internal/Action";
 import {Qualifier} from "../../internal/qualifier/Qualifier";
+import {stringOrNumber} from "../../backwards/types";
 
 /**
  * @description Distorts the image to an arc shape.
@@ -12,7 +13,7 @@ import {Qualifier} from "../../internal/qualifier/Qualifier";
  * @see Visit {@link Actions.Reshape| Reshape} for examples
  */
 class DistortArcAction extends Action {
-  constructor(degrees: number) {
+  constructor(degrees: stringOrNumber) {
     super();
     this.addQualifier(new Qualifier('e', `distort:arc:${degrees}`));
   }

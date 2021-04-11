@@ -143,10 +143,10 @@ describe('Tests for Transformation Action -- Adjust', () => {
 
   it('tests recolor matrix', () => {
     const url = createNewImage('sample')
-      .adjust(Adjust.recolor([[0.1, 0.2, 0.3], [0.4, 0.5, 0.6], [0.7, 0.8, 0.9]]))
+      .adjust(Adjust.recolor([[1, 0.2, 0.3], [0.4, 0.5, 0.6], [0.7, 0.8, 0.9]]))
       .toURL();
 
-    expect(url).toContain('e_recolor:0.1:0.2:0.3:0.4:0.5:0.6:0.7:0.8:0.9');
+    expect(url).toContain('e_recolor:1.0:0.2:0.3:0.4:0.5:0.6:0.7:0.8:0.9');
   });
 
   it('tests fillLight', () => {

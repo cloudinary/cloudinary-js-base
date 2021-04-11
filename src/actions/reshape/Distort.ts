@@ -1,5 +1,6 @@
 import {Action} from "../../internal/Action";
 import {Qualifier} from "../../internal/qualifier/Qualifier";
+import {toFloatAsString} from "../../internal/utils/toFloatAsString";
 
 
 export type IDistortCoordinates = [number, number, number, number, number, number, number, number];
@@ -19,7 +20,11 @@ class DistortAction extends Action {
   constructor(coordinates: IDistortCoordinates) {
     super();
 
-    this.addQualifier(new Qualifier('e', `distort:${coordinates.join(':')}`));
+    const distortValues = coordinates.map((v) => {
+      return toFloatAsString(v);
+    });
+
+    this.addQualifier(new Qualifier('e', `distort:${distortValues.join(':')}`));
   }
 }
 

@@ -3,6 +3,7 @@ import {Qualifier} from "../../../internal/qualifier/Qualifier";
 import {QualifierValue} from "../../../internal/qualifier/QualifierValue";
 import {prepareColor} from "../../../internal/utils/prepareColor";
 import {SystemColors} from "../../../qualifiers/color";
+import {toFloatAsString} from "../../../internal/utils/toFloatAsString";
 
 /**
  * @description Makes the background of the image transparent (or solid white for formats that do not support transparency).
@@ -16,7 +17,7 @@ class MakeTransparentEffectAction extends LeveledEffectAction {
    * @param {number | string} value The tolerance used to accommodate variance in the background color. (Range: 0 to 100, Server default: 10)
    */
   tolerance(value: number | string): this {
-    return this.setLevel(value);
+    return this.setLevel(toFloatAsString(value));
   }
 
   /**

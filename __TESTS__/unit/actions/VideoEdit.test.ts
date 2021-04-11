@@ -58,7 +58,7 @@ describe('Tests for Transformation Action -- VideoEdit', () => {
       .setPublicID('sample')
       .toURL();
 
-    expect(url).toBe('https://res.cloudinary.com/demo/video/upload/du_10,eo_4,so_3/sample');
+    expect(url).toBe('https://res.cloudinary.com/demo/video/upload/du_10.0,eo_4.0,so_3.0/sample');
   });
 
   it('Creates a cloudinaryURL with trim and percent duration', () => {
@@ -70,7 +70,7 @@ describe('Tests for Transformation Action -- VideoEdit', () => {
       .setPublicID('sample')
       .toURL();
 
-    expect(url).toBe('https://res.cloudinary.com/demo/video/upload/du_10p,eo_4,so_3/sample');
+    expect(url).toBe('https://res.cloudinary.com/demo/video/upload/du_10p,eo_4.0,so_3.0/sample');
   });
 
   it('Creates a cloudinaryURL with trim %', () => {

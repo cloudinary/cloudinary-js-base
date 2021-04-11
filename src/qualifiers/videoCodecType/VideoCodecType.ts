@@ -1,4 +1,5 @@
 import {Qualifier} from "../../internal/qualifier/Qualifier";
+import {toFloatAsString} from "../../internal/utils/toFloatAsString";
 
 
 /**
@@ -45,6 +46,13 @@ class AdvVideoCodecType extends Qualifier{
    */
   level(lvl: number | string): this {
     this._lvl = lvl;
+    // Force to always use floats
+    if (typeof lvl === 'number') {
+      this._lvl = toFloatAsString(lvl);
+    } else {
+      this._lvl = lvl;
+    }
+
     return this;
   }
 

@@ -1,5 +1,6 @@
 import {Action} from "../../internal/Action";
 import {Qualifier} from "../../internal/qualifier/Qualifier";
+import {toFloatAsString} from "../../internal/utils/toFloatAsString";
 
 /**
  * @description Class for shortening a video to the specified range.
@@ -20,7 +21,7 @@ class TrimAction extends Action {
    * @return {string}
    */
   private parseVal(val: string|number): string | number {
-    return typeof val === 'number' ? val : val.replace('%', 'p');
+    return typeof val === 'number' ? toFloatAsString(val) : val.replace('%', 'p');
   }
 
   /**

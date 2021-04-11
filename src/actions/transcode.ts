@@ -9,6 +9,7 @@ import ToAnimatedAction from "./transcode/ToAnimatedAction";
 import {AnimatedFormatQualifierValue} from "../qualifiers/animatedFormat/AnimatedFormatQualifierValue";
 import {AdvVideoCodecType, VideoCodecType} from "../qualifiers/videoCodecType/VideoCodecType";
 import {VideoCodecAction} from "./transcode/VideoCodecAction";
+import {toFloatAsString} from "../internal/utils/toFloatAsString";
 
 
 export type ITranscodeAction = BitRateAction
@@ -153,7 +154,7 @@ function fpsRange(from: number, to?: number): FPSRangeAction {
  * @return {Actions.Transcode.KeyframeIntervalsAction}
  */
 function keyframeInterval(interval: number | string): KeyframeIntervalsAction {
-  return new KeyframeIntervalsAction(interval);
+  return new KeyframeIntervalsAction(toFloatAsString(interval));
 }
 
 /**

@@ -183,7 +183,7 @@ describe('Tests for overlay actions', () => {
       .position(sampleFacePosition())
     );
 
-    expect(asset.toString()).toBe('l_video:sample/c_pad,w_100/du_20,fl_layer_apply,g_face,so_10');
+    expect(asset.toString()).toBe('l_video:sample/c_pad,w_100/du_20,fl_layer_apply,g_face,so_10.0');
   });
 
   it('Tests a fetchSource without format', () => {

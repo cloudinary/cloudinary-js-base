@@ -1,6 +1,7 @@
 import {Action} from "../../internal/Action";
 import {QualifierValue} from "../../internal/qualifier/QualifierValue";
 import {Qualifier} from "../../internal/qualifier/Qualifier";
+import {toFloatAsString} from "../../internal/utils/toFloatAsString";
 
 /**
  * @extends SDK.Action
@@ -21,7 +22,7 @@ class RecolorAction extends Action {
     for (let row = 0; row < recolorMatrix.length; row++) {
 
       for (let col = 0; col < recolorMatrix[row].length; col++) {
-        flat.push(recolorMatrix[row][col].toString());
+        flat.push(toFloatAsString(recolorMatrix[row][col]));
       }
     }
 

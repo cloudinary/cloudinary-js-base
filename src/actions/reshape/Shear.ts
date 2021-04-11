@@ -1,4 +1,5 @@
 import {Action} from "../../internal/Action";
+import {stringOrNumber} from "../../backwards/types";
 
 /**
  * @description Skews the image according to the two specified values in degrees.
@@ -7,10 +8,10 @@ import {Action} from "../../internal/Action";
  * @see Visit {@link Actions.Reshape| Reshape} for examples
  */
 class ShearAction extends Action {
-  private _x: number;
-  private _y: number;
+  private _x: stringOrNumber;
+  private _y: stringOrNumber;
 
-  constructor(x: number, y:number) {
+  constructor(x: stringOrNumber, y: stringOrNumber) {
     super();
     this.skewX(x);
     this.skewY(y);
@@ -18,7 +19,7 @@ class ShearAction extends Action {
   /**
    * @param {number} x Skews the image according to the two specified values in degrees. (X and Y)
    */
-  skewX(x: number): this {
+  skewX(x: stringOrNumber): this {
     this._x = x;
     return this;
   }
@@ -26,7 +27,7 @@ class ShearAction extends Action {
   /**
    * @param {number} y Skews the image according to the two specified values in degrees. (X and Y)
    */
-  skewY(y: number): this {
+  skewY(y: stringOrNumber): this {
     this._y = y;
     return this;
   }

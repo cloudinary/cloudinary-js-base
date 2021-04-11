@@ -1,6 +1,7 @@
 import {Action} from "../../internal/Action";
 import {Qualifier} from "../../internal/qualifier/Qualifier";
 import {StringNumberOrExpression} from "../../simpleTypes";
+import {toFloatAsString} from "../../internal/utils/toFloatAsString";
 
 /**
  * @description Defines a video range using startOffset, endOffset, duration.
@@ -22,7 +23,14 @@ class TimelinePosition extends Action {
    * @param {string | number} startOffset
    */
   startOffset(startOffset: StringNumberOrExpression): this {
-    this.addQualifier(new Qualifier('so', startOffset));
+    let value = startOffset;
+
+    // Force to always use floats
+    if (typeof startOffset === 'number') {
+      value = toFloatAsString(startOffset);
+    }
+
+    this.addQualifier(new Qualifier('so', value));
     return this;
   }
 

@@ -16,8 +16,8 @@ describe('Tests for Transformation Action -- Resize.thumb()', () => {
         .height(250)
         .aspectRatio(2)
         .gravity(Gravity.compass(Compass.west()))
-        .zoom(2.5),
+        .zoom(2),
       'url');
-    expect(url).toContain('ar_2.0,c_thumb,g_west,h_250,w_250,z_2.5');
+    expect(url).toContain('ar_2.0,c_thumb,g_west,h_250,w_250,z_2.0');
   });
 });

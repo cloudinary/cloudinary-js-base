@@ -54,7 +54,7 @@ describe('Tests for Transformation Action -- Cutter', () => {
       .reshape(Reshape.distortArc(200))
       .toString();
 
-    expect(url).toBe('e_distort:arc:200');
+    expect(url).toBe('e_distort:arc:200.0');
   });
 
   it('Shears an image with constructor arguments', () => {
@@ -62,7 +62,7 @@ describe('Tests for Transformation Action -- Cutter', () => {
       .reshape(Reshape.shear(100, 200))
       .toString();
 
-    expect(url).toBe('e_shear:100:200');
+    expect(url).toBe('e_shear:100.0:200.0');
   });
 
   it('Distorts an image with coordinates', () => {
@@ -70,7 +70,7 @@ describe('Tests for Transformation Action -- Cutter', () => {
       .reshape(Reshape.distort([1, 2, 3, 4, 5, 6, 7, 8]))
       .toString();
 
-    expect(url).toBe('e_distort:1:2:3:4:5:6:7:8');
+    expect(url).toBe('e_distort:1.0:2.0:3.0:4.0:5.0:6.0:7.0:8.0');
   });
 
   it('Trims an image', () => {
