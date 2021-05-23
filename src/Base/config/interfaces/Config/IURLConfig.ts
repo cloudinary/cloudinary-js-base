@@ -95,4 +95,4 @@ interface IURLConfig {
   forceVersion?: boolean;
 }
 
-export default IURLConfig;
+export {IURLConfig};

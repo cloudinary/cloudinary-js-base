@@ -1,4 +1,4 @@
-import {PSDTools} from "../../../src/actions/psdTools";
+import {PSDTools} from "../../../src/MediaEditing/actions/psdTools";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 describe('Tests for Transformation Action -- PSDTools', () => {

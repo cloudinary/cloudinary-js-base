@@ -1,5 +1,5 @@
-import {FlagQualifier} from "../../../src/qualifiers/flag/FlagQualifier";
-import {Action} from "../../../src/internal/Action";
+import {FlagQualifier} from "../../../src/MediaEditing/qualifiers/flag/FlagQualifier";
+import {Action} from "../../../src/MediaEditing/internal/Action";
 
 describe('Tests for Flag', () => {
   it('Creates a Flag', () => {

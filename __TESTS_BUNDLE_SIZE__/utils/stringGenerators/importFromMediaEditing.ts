@@ -4,12 +4,12 @@
  *                                  The result will be `import {ImageTransformation} from '../../dist'
  * @returns string
  */
-function importFromBase(exportedObject: string): string {
+function importFromMediaEditing(exportedObject: string): string {
   return `
-    import {${exportedObject}} from "${process.cwd()}/dist";
+    import {${exportedObject}} from "${process.cwd()}/dist/MediaEditing";
     // we console log to force the bundle not to tree shake
     console.log(${exportedObject});  
   `;
 }
 
-export default importFromBase;
+export {importFromMediaEditing};

@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import {base64Encode} from "../../../src/internal/utils/base64Encode";
+import {base64Encode} from "../../../src/MediaEditing/internal/utils/base64Encode";
 
 
 describe('base64 test encoding', () => {

@@ -1,6 +1,6 @@
-import ICloudinaryAssetConfigurations from "./ICloudinaryAssetConfigurations";
-import ITagConfig from "./ITagConfig";
-import IApiConfig from "./IApiConfig";
+import {ICloudinaryAssetConfigurations} from "./ICloudinaryAssetConfigurations";
+import {ITagConfig} from "./ITagConfig";
+import {IApiConfig} from "./IApiConfig";
 
 /**
  * @name ICloudinaryAssetConfigurations
@@ -18,4 +18,4 @@ interface ICloudinaryConfigurations extends ICloudinaryAssetConfigurations {
   api?: IApiConfig
 }
 
-export default ICloudinaryConfigurations;
+export {ICloudinaryConfigurations};

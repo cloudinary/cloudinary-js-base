@@ -1,5 +1,5 @@
-import {Region} from "../../../../src/qualifiers/region";
-import {Effect} from "../../../../src/actions/effect";
+import {Region} from "../../../../src/MediaEditing/qualifiers/region";
+import {Effect} from "../../../../src/MediaEditing/actions/effect";
 
 describe('Tests for Transformation Action -- Blur', () => {
   it('Tests blur with and without strength', () => {

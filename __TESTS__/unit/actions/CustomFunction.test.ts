@@ -1,4 +1,4 @@
-import {CustomFunction} from "../../../src/actions/customFunction";
+import {CustomFunction} from "../../../src/MediaEditing/actions/customFunction";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

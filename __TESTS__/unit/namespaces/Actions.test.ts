@@ -1,7 +1,7 @@
-import {RoundCorners} from "../../../src/actions/roundCorners";
-import {Actions} from "../../../src/actions";
-import {Resize} from "../../../src/actions/resize";
-import {Border} from "../../../src/actions/border";
+import {RoundCorners} from "../../../src/MediaEditing/actions/roundCorners";
+import {Actions} from "../../../src/MediaEditing/actions";
+import {Resize} from "../../../src/MediaEditing/actions/resize";
+import {Border} from "../../../src/MediaEditing/actions/border";
 
 describe('Tests for the Actions namespace', () => {
   it('Test that Actions exports different actions correctly', () => {

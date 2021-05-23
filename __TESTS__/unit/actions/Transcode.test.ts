@@ -1,13 +1,13 @@
-import {AnimatedFormat} from "../../../src/qualifiers/animatedFormat";
+import {AnimatedFormat} from "../../../src/MediaEditing/qualifiers/animatedFormat";
 import {createNewVideo} from "../../TestUtils/createCloudinaryVideo";
-import {AudioFrequency} from "../../../src/qualifiers/audioFrequency";
-import {Transcode} from "../../../src/actions/transcode";
-import {AudioCodec} from "../../../src/qualifiers/audioCodec";
-import {StreamingProfile} from "../../../src/qualifiers/streamingProfile";
-import {VideoCodec} from "../../../src/qualifiers/videoCodec";
-import {VideoCodecLevel} from "../../../src/qualifiers/videoCodecLevel";
-import {VideoCodecProfile} from "../../../src/qualifiers/videoCodecProfile";
-import {scale} from "../../../src/actions/resize";
+import {AudioFrequency} from "../../../src/MediaEditing/qualifiers/audioFrequency";
+import {Transcode} from "../../../src/MediaEditing/actions/transcode";
+import {AudioCodec} from "../../../src/MediaEditing/qualifiers/audioCodec";
+import {StreamingProfile} from "../../../src/MediaEditing/qualifiers/streamingProfile";
+import {VideoCodec} from "../../../src/MediaEditing/qualifiers/videoCodec";
+import {VideoCodecLevel} from "../../../src/MediaEditing/qualifiers/videoCodecLevel";
+import {VideoCodecProfile} from "../../../src/MediaEditing/qualifiers/videoCodecProfile";
+import {scale} from "../../../src/MediaEditing/actions/resize";
 
 describe('Tests for Transformation Action -- Transcode', () => {
   it('Creates a cloudinaryURL with audiocodec', () => {

@@ -1,4 +1,4 @@
-import {Gravity} from "../../../../src/qualifiers/gravity";
+import {Gravity} from "../../../../src/MediaEditing/qualifiers/gravity";
 
 describe('Gravity Qualifier', () => {
   it ('Expects Gravity to include the four Gravity types', () => {

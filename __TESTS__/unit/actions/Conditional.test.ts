@@ -1,7 +1,7 @@
-import {Conditional} from "../../../src/actions/conditional";
+import {Conditional} from "../../../src/MediaEditing/actions/conditional";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {Transformation} from "../../../src/transformation/Transformation";
-import {Resize} from "../../../src/actions/resize";
+import {Transformation} from "../../../src/MediaEditing/transformation/Transformation";
+import {Resize} from "../../../src/MediaEditing/actions/resize";
 
 
 describe('Tests for Transformation Action -- Conditional', () => {

@@ -1,5 +1,5 @@
 import getImageWithResize from "./shared/getImageWithResize";
-import {minimumFit} from "../../../../src/actions/resize";
+import {minimumFit} from "../../../../src/MediaEditing/actions/resize";
 
 describe('Tests for Transformation Action -- Resize.minimumFit', () => {
   it('Ensures it generates the right URL', () => {

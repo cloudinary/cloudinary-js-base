@@ -1,5 +1,5 @@
-import {Transformation} from "../../../src/transformation/Transformation";
-import {scale} from "../../../src/actions/resize";
+import {Transformation} from "../../../src/MediaEditing/transformation/Transformation";
+import {scale} from "../../../src/MediaEditing/actions/resize";
 
 describe('Tests for ImageTransformation', () => {
   let tx: Transformation = null;

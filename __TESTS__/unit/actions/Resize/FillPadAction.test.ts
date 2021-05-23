@@ -1,7 +1,7 @@
 import getImageWithResize from "./shared/getImageWithResize";
-import {Gravity} from "../../../../src/qualifiers/gravity";
-import {Background} from "../../../../src/qualifiers/background";
-import {fillPad} from "../../../../src/actions/resize";
+import {Gravity} from "../../../../src/MediaEditing/qualifiers/gravity";
+import {Background} from "../../../../src/MediaEditing/qualifiers/background";
+import {fillPad} from "../../../../src/MediaEditing/actions/resize";
 
 
 describe('Tests for Transformation Action -- Resize.fillPad', () => {

@@ -1,4 +1,4 @@
-import {VideoTransformation} from "../../../src/transformation/VideoTransformation";
+import {VideoTransformation} from "../../../src/MediaEditing/transformation/VideoTransformation";
 
 describe('Tests for VideoTransformation', () => {
   let tVideo: VideoTransformation = null;

@@ -1,6 +1,6 @@
-import {ChromaSubSampling} from "../../../src/qualifiers/chromaSubSampling";
-import {Quality} from "../../../src/qualifiers/quality";
-import {Delivery} from "../../../src/actions/delivery";
+import {ChromaSubSampling} from "../../../src/MediaEditing/qualifiers/chromaSubSampling";
+import {Quality} from "../../../src/MediaEditing/qualifiers/quality";
+import {Delivery} from "../../../src/MediaEditing/actions/delivery";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

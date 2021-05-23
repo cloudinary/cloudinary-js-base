@@ -1,4 +1,4 @@
-import {Extract} from "../../../src/actions/extract";
+import {Extract} from "../../../src/MediaEditing/actions/extract";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 describe('Tests for Transformation Action -- Extract', () => {

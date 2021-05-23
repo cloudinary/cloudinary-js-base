@@ -1,6 +1,6 @@
-import {Adjust} from "../../../src/actions/adjust";
+import {Adjust} from "../../../src/MediaEditing/actions/adjust";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {ImproveMode} from "../../../src/qualifiers/improveMode";
+import {ImproveMode} from "../../../src/MediaEditing/qualifiers/improveMode";
 
 
 describe('Tests for Transformation Action -- Adjust', () => {

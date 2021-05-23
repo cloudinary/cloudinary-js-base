@@ -1,6 +1,6 @@
-import ICloudConfig from "../../src/config/interfaces/Config/ICloudConfig";
-import IURLConfig from "../../src/config/interfaces/Config/IURLConfig";
-import {CloudinaryFile} from "../../src";
+import {ICloudConfig} from "../../src/Base";
+import {IURLConfig} from "../../src/Base";
+import {CloudinaryFile} from "../../src/MediaEditing";
 
 /**
  *

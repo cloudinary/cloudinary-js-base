@@ -1,5 +1,5 @@
-import {createCloudinaryV1URL} from "../../src/backwards/createCloudinaryURL";
-import {generateTransformationString} from "../../src/backwards/generateTransformationString";
+import {createCloudinaryV1URL} from "../../src/MediaEditing/backwards/createCloudinaryURL";
+import {generateTransformationString} from "../../src/MediaEditing/backwards/generateTransformationString";
 
 describe('Create v1 urls', () => {
   it('works', () => {

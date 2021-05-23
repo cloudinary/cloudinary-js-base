@@ -4,7 +4,7 @@
  */
 
 import importFromDist from "./utils/stringGenerators/importFromDist";
-import importFromBase from "./utils/stringGenerators/importFromBase";
+import {importFromMediaEditing} from "./utils/stringGenerators/importFromMediaEditing";
 import {ITestCase} from "./interfaces/ITestCase";
 
 /**
@@ -69,14 +69,14 @@ const bundleSizeTestCases:ITestCase[] = [
     name: 'Import backwards comaptiblity function',
     sizeLimitInKB: 12,
     importsArray: [
-      importFromBase('createCloudinaryV1URL')
+      importFromMediaEditing('createCloudinaryV1URL')
     ]
   },
   {
     name: 'Import all of the SDK',
     sizeLimitInKB: 110,
     importsArray: [
-      importFromBase('CloudinaryBaseSDK')
+      importFromMediaEditing('CloudinaryBaseSDK')
     ]
   }
 ];

@@ -1,5 +1,5 @@
-import {Color} from "../../../src/qualifiers/color";
-import * as Resize from "../../../src/actions/resize";
+import {Color} from "../../../src/MediaEditing/qualifiers/color";
+import * as Resize from "../../../src/MediaEditing/actions/resize";
 import {
   auto,
   border,
@@ -8,8 +8,8 @@ import {
   predominant,
   predominantGradient,
   blurred
-} from "../../../src/qualifiers/background";
-import {GradientDirection} from "../../../src/qualifiers/gradientDirection";
+} from "../../../src/MediaEditing/qualifiers/background";
+import {GradientDirection} from "../../../src/MediaEditing/qualifiers/gradientDirection";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

@@ -1,5 +1,5 @@
 import getImageWithResize from "./shared/getImageWithResize";
-import {imaggaCrop} from "../../../../src/actions/resize";
+import {imaggaCrop} from "../../../../src/MediaEditing/actions/resize";
 
 
 describe('Tests for Transformation Action -- Resize.imaggaCrop', () => {

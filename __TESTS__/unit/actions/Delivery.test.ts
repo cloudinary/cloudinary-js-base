@@ -1,10 +1,10 @@
-import {Format} from "../../../src/qualifiers/format";
-import {Quality} from "../../../src/qualifiers/quality";
-import {ColorSpace} from "../../../src/qualifiers/colorSpace";
-import {Dpr} from "../../../src/qualifiers/dpr";
-import {Delivery} from "../../../src/actions/delivery";
+import {Format} from "../../../src/MediaEditing/qualifiers/format";
+import {Quality} from "../../../src/MediaEditing/qualifiers/quality";
+import {ColorSpace} from "../../../src/MediaEditing/qualifiers/colorSpace";
+import {Dpr} from "../../../src/MediaEditing/qualifiers/dpr";
+import {Delivery} from "../../../src/MediaEditing/actions/delivery";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {Progressive} from "../../../src/qualifiers/progressive";
+import {Progressive} from "../../../src/MediaEditing/qualifiers/progressive";
 
 
 const {format} = Delivery;

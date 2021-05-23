@@ -3,7 +3,7 @@
  */
 
 
-import pkg from '../../../src/package.json';
+import pkg from '../../../src/MediaEditing/package.json';
 import {createNewImageWithAnalytics} from "./testUtils/createNewImageWithAnalytics";
 
 describe('Add analytics to a regular URL', () => {

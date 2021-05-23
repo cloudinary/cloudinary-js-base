@@ -12,7 +12,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "ignorePatterns": ["dist", "docs", "node_modules", "dev/*.esm*", "src/backwards"],
+  "ignorePatterns": ["dist", "docs", "node_modules", "dev/*.esm*", "src/MediaEditing/backwards"],
   "env": {
     "browser": true,
     "jest": true

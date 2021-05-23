@@ -1,5 +1,5 @@
-import {Compass} from "../../../../src/qualifiers/compass";
-import {Gravity} from "../../../../src/qualifiers/gravity";
+import {Compass} from "../../../../src/MediaEditing/qualifiers/compass";
+import {Gravity} from "../../../../src/MediaEditing/qualifiers/gravity";
 
 describe('Tests for Compass Gravity', () => {
   it('Expects Gravity to return g_{direction}', () => {

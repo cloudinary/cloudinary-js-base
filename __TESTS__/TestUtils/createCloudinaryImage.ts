@@ -1,6 +1,6 @@
-import {CloudinaryImage} from "../../src/assets/CloudinaryImage";
-import ICloudConfig from "../../src/config/interfaces/Config/ICloudConfig";
-import IURLConfig from "../../src/config/interfaces/Config/IURLConfig";
+import {CloudinaryImage} from "../../src/MediaEditing/assets/CloudinaryImage";
+import {ICloudConfig} from "../../src/Base";
+import {IURLConfig} from "../../src/Base";
 
 /**
  *

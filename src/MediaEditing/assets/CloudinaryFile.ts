@@ -5,10 +5,10 @@ import {
   handleStorageType
 } from "../internal/url/cloudinaryURL";
 import {Transformation} from "../transformation/Transformation";
-import ICloudConfig from "../config/interfaces/Config/ICloudConfig";
-import IURLConfig from "../config/interfaces/Config/IURLConfig";
-import IAuthTokenConfig from "../config/interfaces/Config/IAuthTokenConfig";
-import URLConfig from "../config/URLConfig";
+import {ICloudConfig} from "../../Base";
+import {IURLConfig} from "../../Base";
+import {IAuthTokenConfig} from "../../Base";
+import {URLConfig} from "../../Base";
 import {getSDKAnalyticsSignature} from "../sdkAnalytics/getSDKAnalyticsSignature";
 import {ITrackedPropertiesThroughAnalytics} from "../sdkAnalytics/interfaces/ITrackedPropertiesThroughAnalytics";
 

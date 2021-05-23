@@ -1,5 +1,5 @@
-import {pad} from "../../../src/actions/resize";
-import {Transformation} from "../../../src/transformation/Transformation";
+import {pad} from "../../../src/MediaEditing/actions/resize";
+import {Transformation} from "../../../src/MediaEditing/transformation/Transformation";
 
 /**
  * sample action used for testing

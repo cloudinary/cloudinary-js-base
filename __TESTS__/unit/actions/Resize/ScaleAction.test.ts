@@ -1,5 +1,5 @@
 import getImageWithResize from "./shared/getImageWithResize";
-import {scale} from "../../../../src/actions/resize";
+import {scale} from "../../../../src/MediaEditing/actions/resize";
 
 
 describe('Tests for Transformation Action -- Resize.scale', () => {

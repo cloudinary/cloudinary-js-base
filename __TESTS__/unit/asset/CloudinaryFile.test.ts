@@ -1,4 +1,4 @@
-import {CloudinaryFile} from "../../../src/assets/CloudinaryFile";
+import {CloudinaryFile} from "../../../src/MediaEditing/assets/CloudinaryFile";
 
 describe('Tests for CloudinaryFile', () => {
   let cloudinaryFile: CloudinaryFile = null;

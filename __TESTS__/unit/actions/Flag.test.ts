@@ -1,5 +1,5 @@
-import * as Resize from "../../../src/actions/resize";
-import {Flag} from "../../../src/qualifiers/flag";
+import * as Resize from "../../../src/MediaEditing/actions/resize";
+import {Flag} from "../../../src/MediaEditing/qualifiers/flag";
 import {createNewVideo} from "../../TestUtils/createCloudinaryVideo";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 

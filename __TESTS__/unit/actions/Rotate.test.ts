@@ -1,5 +1,5 @@
-import * as Rotate from '../../../src/actions/rotate';
-import * as RotationMode from "../../../src/qualifiers/rotationMode";
+import * as Rotate from '../../../src/MediaEditing/actions/rotate';
+import * as RotationMode from "../../../src/MediaEditing/qualifiers/rotationMode";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

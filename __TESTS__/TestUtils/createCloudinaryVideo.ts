@@ -1,6 +1,6 @@
-import {CloudinaryVideo} from "../../src/assets/CloudinaryVideo";
-import ICloudConfig from "../../src/config/interfaces/Config/ICloudConfig";
-import IURLConfig from "../../src/config/interfaces/Config/IURLConfig";
+import {CloudinaryVideo} from "../../src/MediaEditing/assets/CloudinaryVideo";
+import {ICloudConfig} from "../../src/Base";
+import {IURLConfig} from "../../src/Base";
 
 /**
  *

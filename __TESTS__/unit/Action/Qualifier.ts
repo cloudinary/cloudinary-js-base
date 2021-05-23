@@ -1,5 +1,5 @@
-import {Qualifier} from '../../../src/internal/qualifier/Qualifier';
-import {QualifierValue} from '../../../src/internal/qualifier/QualifierValue';
+import {Qualifier} from '../../../src/MediaEditing/internal/qualifier/Qualifier';
+import {QualifierValue} from '../../../src/MediaEditing/internal/qualifier/QualifierValue';
 
 describe('Tests for Qualifier', () => {
   it('Creates a Qualifier', () => {

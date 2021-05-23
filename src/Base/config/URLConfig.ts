@@ -1,7 +1,7 @@
-import IURLConfig from "./interfaces/Config/IURLConfig";
-import Config from "./BaseConfig";
-import {ALLOWED_URL_CONFIG} from "../internal/internalConstants";
-import ICloudConfig from "./interfaces/Config/ICloudConfig";
+import {IURLConfig} from "./interfaces/Config/IURLConfig";
+import {Config} from "./BaseConfig";
+import {ICloudConfig} from "./interfaces/Config/ICloudConfig";
+import {ALLOWED_URL_CONFIG} from "../ConfigConstants";
 
 class URLConfig extends Config implements IURLConfig {
   cname?: string; // User subdomain (example.cloudinary.com)
@@ -104,4 +104,4 @@ class URLConfig extends Config implements IURLConfig {
 }
 
 
-export default URLConfig;
+export {URLConfig};

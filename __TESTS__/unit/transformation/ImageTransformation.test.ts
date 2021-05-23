@@ -1,4 +1,4 @@
-import {ImageTransformation} from "../../../src/transformation/ImageTransformation";
+import {ImageTransformation} from "../../../src/MediaEditing/transformation/ImageTransformation";
 
 
 describe('Tests for ImageTransformation', () => {

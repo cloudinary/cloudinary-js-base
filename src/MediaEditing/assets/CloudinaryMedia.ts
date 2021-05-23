@@ -1,21 +1,22 @@
-import IURLConfig from "../config/interfaces/Config/IURLConfig";
-import {Action} from "../internal/Action";
 import {CloudinaryTransformable} from "./CloudinaryTransformable";
-import ICloudConfig from "../config/interfaces/Config/ICloudConfig";
+import {Action} from "../internal/Action";
 import {videoEditType} from "../actions/videoEdit";
-import {VideoTransformation} from "../transformation/VideoTransformation";
+import {LayerAction} from "../actions/layer/LayerAction";
+import {Transformation} from "../transformation/Transformation";
+import {ICloudConfig} from "../../Base";
+import {IURLConfig} from "../../Base/";
+import cloneDeep from 'lodash/cloneDeep';
 
 
 /**
- * @desc Cloudinary video asset, with video-related transformations
+ * @desc Cloudinary media asset, with all possible transformations
  * @summary SDK
  * @memberOf SDK
  */
-class CloudinaryVideo extends CloudinaryTransformable {
+class CloudinaryMedia extends CloudinaryTransformable {
   constructor(publicID?: string, cloudConfig?: ICloudConfig, urlConfig?: IURLConfig) {
     /* istanbul ignore next */
-    super(publicID, cloudConfig, urlConfig, new VideoTransformation());
-    this.assetType = 'video';
+    super(publicID, cloudConfig, urlConfig, new Transformation());
   }
 
   /**
@@ -37,7 +38,19 @@ class CloudinaryVideo extends CloudinaryTransformable {
     this.transformation.videoEdit(action);
     return this;
   }
+
+  /**
+   * @desc A proxy to {@link SDK.Transformation| Transformation} - Calls the same method contained in this.transformation
+   * @return {this}
+   */
+  underlay(underlayAction: LayerAction): this {
+    this.transformation.underlay(underlayAction);
+    return this;
+  }
+
+  clone(): this {
+    return cloneDeep(this);
+  }
 }
 
-
-export {CloudinaryVideo};
+export {CloudinaryMedia};

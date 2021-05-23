@@ -1,8 +1,8 @@
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {CloudinaryImage} from "../../../src";
-import {Resize} from "../../../src/actions/resize";
-import {Rotate} from "../../../src/actions/rotate";
-import {SEO_TYPES} from "../../../src/assets/CloudinaryFile";
+import {CloudinaryImage} from "../../../src/MediaEditing";
+import {Resize} from "../../../src/MediaEditing/actions/resize";
+import {Rotate} from "../../../src/MediaEditing/actions/rotate";
+import {SEO_TYPES} from "../../../src/MediaEditing/assets/CloudinaryFile";
 
 
 describe('Tests for URL configuration', () => {

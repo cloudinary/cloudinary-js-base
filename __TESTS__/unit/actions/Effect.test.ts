@@ -1,15 +1,15 @@
-import {image} from "../../../src/qualifiers/source";
-import {rodMonochromacy} from "../../../src/qualifiers/simulateColorBlind";
-import {Color} from "../../../src/qualifiers/color";
-import {scale} from "../../../src/actions/resize";
-import {GradientFade} from "../../../src/qualifiers/GradientFade";
-import {cartoonify, Effect} from "../../../src/actions/effect";
-import {OutlineMode} from "../../../src/qualifiers/outlineMode";
-import {halftone4x4Orthogonal} from "../../../src/qualifiers/dither";
-import {ArtisticFilter} from "../../../src/qualifiers/artisticFilter";
-import {Transformation} from "../../../src/transformation/Transformation";
+import {image} from "../../../src/MediaEditing/qualifiers/source";
+import {rodMonochromacy} from "../../../src/MediaEditing/qualifiers/simulateColorBlind";
+import {Color} from "../../../src/MediaEditing/qualifiers/color";
+import {scale} from "../../../src/MediaEditing/actions/resize";
+import {GradientFade} from "../../../src/MediaEditing/qualifiers/GradientFade";
+import {cartoonify, Effect} from "../../../src/MediaEditing/actions/effect";
+import {OutlineMode} from "../../../src/MediaEditing/qualifiers/outlineMode";
+import {halftone4x4Orthogonal} from "../../../src/MediaEditing/qualifiers/dither";
+import {ArtisticFilter} from "../../../src/MediaEditing/qualifiers/artisticFilter";
+import {Transformation} from "../../../src/MediaEditing/transformation/Transformation";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {ShakeStrength} from "../../../src/qualifiers/shakeStrength";
+import {ShakeStrength} from "../../../src/MediaEditing/qualifiers/shakeStrength";
 
 
 describe('Tests for Transformation Action -- Effect', () => {

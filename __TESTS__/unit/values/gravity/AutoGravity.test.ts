@@ -1,6 +1,6 @@
-import {Gravity} from "../../../../src/qualifiers/gravity";
-import {AutoFocus} from "../../../../src/qualifiers/autoFocus";
-import {FocusOn} from "../../../../src/qualifiers/focusOn";
+import {Gravity} from "../../../../src/MediaEditing/qualifiers/gravity";
+import {AutoFocus} from "../../../../src/MediaEditing/qualifiers/autoFocus";
+import {FocusOn} from "../../../../src/MediaEditing/qualifiers/focusOn";
 
 describe('Gravity Qualifier', () => {
   it('AutoGravity should return g_auto by default', () => {

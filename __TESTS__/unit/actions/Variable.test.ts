@@ -1,6 +1,6 @@
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {setFloat, setInteger, setString, Variable} from "../../../src/actions/variable";
-import {Expression} from "../../../src/qualifiers/expression";
+import {setFloat, setInteger, setString, Variable} from "../../../src/MediaEditing/actions/variable";
+import {Expression} from "../../../src/MediaEditing/qualifiers/expression";
 
 const {set} = Variable;
 const {expression} = Expression;

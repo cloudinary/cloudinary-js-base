@@ -1,6 +1,6 @@
-import {AspectRatio} from "../../../../src/qualifiers/aspectRatio";
+import {AspectRatio} from "../../../../src/MediaEditing/qualifiers/aspectRatio";
 import {createNewImage} from "../../../TestUtils/createCloudinaryImage";
-import {crop} from "../../../../src/actions/resize";
+import {crop} from "../../../../src/MediaEditing/actions/resize";
 
 
 describe('Tests for AspectRatio values Action -- Resize.crop', () => {

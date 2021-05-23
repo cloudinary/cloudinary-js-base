@@ -1,10 +1,10 @@
-import {image} from "../../../src/qualifiers/source";
-import {scale} from "../../../src/actions/resize";
-import {Reshape} from "../../../src/actions/reshape";
-import {Position} from "../../../src/qualifiers/position";
-import {Gravity} from "../../../src/qualifiers/gravity";
-import {Compass} from "../../../src/qualifiers/compass";
-import {Transformation} from "../../../src/transformation/Transformation";
+import {image} from "../../../src/MediaEditing/qualifiers/source";
+import {scale} from "../../../src/MediaEditing/actions/resize";
+import {Reshape} from "../../../src/MediaEditing/actions/reshape";
+import {Position} from "../../../src/MediaEditing/qualifiers/position";
+import {Gravity} from "../../../src/MediaEditing/qualifiers/gravity";
+import {Compass} from "../../../src/MediaEditing/qualifiers/compass";
+import {Transformation} from "../../../src/MediaEditing/transformation/Transformation";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

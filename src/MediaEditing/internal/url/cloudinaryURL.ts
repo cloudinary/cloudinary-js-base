@@ -1,4 +1,4 @@
-import IURLConfig from "../../config/interfaces/Config/IURLConfig";
+import {IURLConfig} from "../../../Base";
 import {isUrl} from "./urlUtils/isUrl";
 import {isFileName} from "./urlUtils/isFileName";
 import {publicIDContainsVersion} from "./urlUtils/publicIDContainsVersion";

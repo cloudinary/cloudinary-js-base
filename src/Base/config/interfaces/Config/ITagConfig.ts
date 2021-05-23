@@ -19,4 +19,4 @@ interface ITagConfig {
   }
 }
 
-export default ITagConfig;
+export {ITagConfig};

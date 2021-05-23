@@ -1,7 +1,7 @@
-import {Action} from '../../../src/internal/Action';
-import {Qualifier} from '../../../src/internal/qualifier/Qualifier';
-import {QualifierValue} from "../../../src/internal/qualifier/QualifierValue";
-import {FlagQualifier} from "../../../src/qualifiers/flag/FlagQualifier";
+import {Action} from '../../../src/MediaEditing/internal/Action';
+import {Qualifier} from '../../../src/MediaEditing/internal/qualifier/Qualifier';
+import {QualifierValue} from "../../../src/MediaEditing/internal/qualifier/QualifierValue";
+import {FlagQualifier} from "../../../src/MediaEditing/qualifiers/flag/FlagQualifier";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

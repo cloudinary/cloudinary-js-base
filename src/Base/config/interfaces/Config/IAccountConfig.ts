@@ -9,4 +9,4 @@ interface IAccountConfig {
   [other:string]: string | number;
 }
 
-export default IAccountConfig;
+export {IAccountConfig};

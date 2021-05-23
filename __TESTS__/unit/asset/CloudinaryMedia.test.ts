@@ -1,8 +1,8 @@
-import {CloudinaryMedia} from "../../../src/assets/CloudinaryMedia";
-import {VideoEdit} from "../../../src/actions/videoEdit";
-import {Transcode} from "../../../src/actions/transcode";
-import {Underlay} from "../../../src/actions/underlay";
-import {Source} from "../../../src/qualifiers/source";
+import {CloudinaryMedia} from "../../../src/MediaEditing/assets/CloudinaryMedia";
+import {VideoEdit} from "../../../src/MediaEditing/actions/videoEdit";
+import {Transcode} from "../../../src/MediaEditing/actions/transcode";
+import {Underlay} from "../../../src/MediaEditing/actions/underlay";
+import {Source} from "../../../src/MediaEditing/qualifiers/source";
 
 describe('Tests for CloudinaryMedia', () => {
   let cloudinaryMedia: CloudinaryMedia = null;

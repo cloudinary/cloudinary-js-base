@@ -7,7 +7,7 @@
 function importFromDist(pathInDist: string, namedVariableName: string): string {
 
   return `
-    import {${namedVariableName}} from '${process.cwd()}/dist/${pathInDist}';
+    import {${namedVariableName}} from '${process.cwd()}/dist/MediaEditing/${pathInDist}';
     // we console log to force the bundle not to tree shake
     console.log(${namedVariableName});
   `;

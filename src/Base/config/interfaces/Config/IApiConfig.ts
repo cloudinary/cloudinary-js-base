@@ -11,4 +11,4 @@ interface IApiConfig {
   chunkSize?: number;
 }
 
-export default IApiConfig;
+export {IApiConfig};

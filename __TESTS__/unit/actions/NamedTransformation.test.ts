@@ -1,5 +1,5 @@
-import {name} from "../../../src/actions/namedTransformation";
-import {scale} from "../../../src/actions/resize";
+import {name} from "../../../src/MediaEditing/actions/namedTransformation";
+import {scale} from "../../../src/MediaEditing/actions/resize";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 describe('Tests for Transformation Action -- NamedTransformation', () => {

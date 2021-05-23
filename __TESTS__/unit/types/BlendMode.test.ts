@@ -1,4 +1,4 @@
-import {BlendMode} from "../../../src/qualifiers/blendMode";
+import {BlendMode} from "../../../src/MediaEditing/qualifiers/blendMode";
 
 
 describe('BlendMode Qualifier', () => {

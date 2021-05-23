@@ -1,4 +1,4 @@
-import {byRadius, max} from 'actions/roundCorners';
+import {byRadius, max} from 'MediaEditing/actions/roundCorners';
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 
 

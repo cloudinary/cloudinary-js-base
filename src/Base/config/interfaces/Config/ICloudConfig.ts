@@ -1,4 +1,4 @@
-import IAuthTokenConfig from "./IAuthTokenConfig";
+import {IAuthTokenConfig} from "./IAuthTokenConfig";
 
 /**
  * @name ICloudConfig
@@ -29,4 +29,4 @@ interface ICloudConfig {
   authToken?: IAuthTokenConfig;
 }
 
-export default ICloudConfig;
+export {ICloudConfig};

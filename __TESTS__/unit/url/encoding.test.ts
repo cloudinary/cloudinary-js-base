@@ -1,11 +1,11 @@
-import {fetch, image, subtitles, text, video} from "../../../src/qualifiers/source";
-import {Transformation} from "../../../src/transformation/Transformation";
-import {Overlay} from "../../../src/actions/overlay";
+import {fetch, image, subtitles, text, video} from "../../../src/MediaEditing/qualifiers/source";
+import {Transformation} from "../../../src/MediaEditing/transformation/Transformation";
+import {Overlay} from "../../../src/MediaEditing/actions/overlay";
 import {sampleTextStyle} from "../../TestUtils/transformations/sampleTextStyle";
 import {sampleEmptyTextStyle} from "../../TestUtils/transformations/sampleEmptyTextStyle";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {Variable} from "../../../src/actions/variable";
-import {Flag} from "../../../src/qualifiers/flag";
+import {Variable} from "../../../src/MediaEditing/actions/variable";
+import {Flag} from "../../../src/MediaEditing/qualifiers/flag";
 
 
 describe('Tests for Encoding the URL', () => {

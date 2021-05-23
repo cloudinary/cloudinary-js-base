@@ -1,5 +1,5 @@
-import ResizeSimpleAction from "../../../../../src/actions/resize/ResizeSimpleAction";
-import {CloudinaryImage} from "../../../../../src/assets/CloudinaryImage";
+import ResizeSimpleAction from "../../../../../src/MediaEditing/actions/resize/ResizeSimpleAction";
+import {CloudinaryImage} from "../../../../../src/MediaEditing/assets/CloudinaryImage";
 
 
 

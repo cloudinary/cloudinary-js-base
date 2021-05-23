@@ -1,10 +1,10 @@
-import {TextStyle} from "../../../../src/qualifiers/textStyle";
-import {FontStyle} from "../../../../src/qualifiers/fontStyle";
-import {FontAntialias} from "../../../../src/qualifiers/FontAntialias";
-import {FontWeight} from "../../../../src/qualifiers/fontWeight";
-import {FontHinting} from "../../../../src/qualifiers/fontHinting";
-import {TextDecoration} from "../../../../src/qualifiers/textDecoration";
-import {TextAlignment} from "../../../../src/qualifiers/textAlignment";
+import {TextStyle} from "../../../../src/MediaEditing/qualifiers/textStyle";
+import {FontStyle} from "../../../../src/MediaEditing/qualifiers/fontStyle";
+import {FontAntialias} from "../../../../src/MediaEditing/qualifiers/FontAntialias";
+import {FontWeight} from "../../../../src/MediaEditing/qualifiers/fontWeight";
+import {FontHinting} from "../../../../src/MediaEditing/qualifiers/fontHinting";
+import {TextDecoration} from "../../../../src/MediaEditing/qualifiers/textDecoration";
+import {TextAlignment} from "../../../../src/MediaEditing/qualifiers/textAlignment";
 
 describe('Text Style tests', () => {
   it('Create a new instance', () => {

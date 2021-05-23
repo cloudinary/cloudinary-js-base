@@ -1,6 +1,6 @@
-import {FocusOn} from "../../../../src/qualifiers/focusOn";
-import {Gravity} from "../../../../src/qualifiers/gravity";
-import {AutoFocus} from "../../../../src/qualifiers/autoFocus";
+import {FocusOn} from "../../../../src/MediaEditing/qualifiers/focusOn";
+import {Gravity} from "../../../../src/MediaEditing/qualifiers/gravity";
+import {AutoFocus} from "../../../../src/MediaEditing/qualifiers/autoFocus";
 
 describe('FocusOn Gravity Qualifier', () => {
   it('Expects focusOn to return {object}', () => {

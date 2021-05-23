@@ -1,5 +1,5 @@
-import IURLConfig from "./IURLConfig";
-import ICloudConfig from "./ICloudConfig";
+import {IURLConfig} from "./IURLConfig";
+import {ICloudConfig} from "./ICloudConfig";
 
 /**
  * @name ICloudinaryAssetConfigurations
@@ -29,4 +29,4 @@ interface ICloudinaryAssetConfigurations {
   url?: IURLConfig,
 }
 
-export default ICloudinaryAssetConfigurations;
+export {ICloudinaryAssetConfigurations};

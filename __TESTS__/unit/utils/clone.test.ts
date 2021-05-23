@@ -1,5 +1,5 @@
-import {CloudinaryMedia} from "../../../src/assets/CloudinaryMedia";
-import {Effect} from "../../../src/actions/effect";
+import {CloudinaryMedia} from "../../../src/MediaEditing/assets/CloudinaryMedia";
+import {Effect} from "../../../src/MediaEditing/actions/effect";
 
 describe('Tests for cloning', () => {
   it('should clone resource', () => {

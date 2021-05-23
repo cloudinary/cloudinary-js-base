@@ -1,4 +1,4 @@
-import {mapToSortedArray} from "../../../../src/internal/utils/dataStructureUtils";
+import {mapToSortedArray} from "../../../../src/MediaEditing/internal/utils/dataStructureUtils";
 
 describe('Tests for sortMapByKey', () => {
   it('sorts a map', () => {

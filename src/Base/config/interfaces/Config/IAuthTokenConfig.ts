@@ -27,4 +27,4 @@ interface IAuthTokenConfig {
   key: string
 }
 
-export default IAuthTokenConfig;
+export {IAuthTokenConfig};

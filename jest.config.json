@@ -7,7 +7,7 @@
     "<rootDir>/scripts/**/*.ts",
     "!<rootDir>/scripts/createEntrypoints.ts",
     "!<rootDir>/scripts/copyPackageJsonToSrc.ts.ts",
-    "!<rootDir>/src/backwards/**/*.ts"
+    "!<rootDir>/src/MediaEditing/backwards/**/*.ts"
   ],
   "modulePaths": [
     "<rootDir>/src"

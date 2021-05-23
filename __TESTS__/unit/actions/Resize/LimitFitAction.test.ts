@@ -1,5 +1,5 @@
 import getImageWithResize from "./shared/getImageWithResize";
-import {limitFit} from "../../../../src/actions/resize";
+import {limitFit} from "../../../../src/MediaEditing/actions/resize";
 
 describe('Tests for Transformation Action -- Resize.limitFit', () => {
   it('Ensures it generates the right URL', () => {

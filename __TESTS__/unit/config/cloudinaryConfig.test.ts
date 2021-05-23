@@ -1,6 +1,6 @@
-import CloudinaryConfig from "../../../src/config/CloudinaryConfig";
-import URLConfig from "../../../src/config/URLConfig";
-import CloudConfig from "../../../src/config/CloudConfig";
+import {CloudinaryConfig} from "../../../src/Base";
+import {URLConfig} from "../../../src/Base";
+import {CloudConfig} from "../../../src/Base/config/CloudConfig";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
 import {createNewFile} from "../../TestUtils/createCloudinaryFile";
 

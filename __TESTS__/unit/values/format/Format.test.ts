@@ -1,4 +1,4 @@
-import {Format} from "../../../../src/qualifiers/format";
+import {Format} from "../../../../src/MediaEditing/qualifiers/format";
 
 describe('Test imported qualifiers', () => {
   it ('Tests audio formats', () => {

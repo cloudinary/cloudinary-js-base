@@ -1,6 +1,6 @@
-import {Border} from "../../../src/actions/border";
+import {Border} from "../../../src/MediaEditing/actions/border";
 import {createNewImage} from "../../TestUtils/createCloudinaryImage";
-import {RoundCorners} from "../../../src/actions/roundCorners";
+import {RoundCorners} from "../../../src/MediaEditing/actions/roundCorners";
 
 
 describe('Tests for Transformation Action -- Border', () => {

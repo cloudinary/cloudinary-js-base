@@ -1,18 +1,18 @@
-import {TextDecoration} from "../../../src/qualifiers/textDecoration";
-import {Dither} from "../../../src/qualifiers/dither";
-import {FontStyle} from "../../../src/qualifiers/fontStyle";
-import {StreamingProfile} from "../../../src/qualifiers/streamingProfile";
-import {ChromaSubSampling} from "../../../src/qualifiers/chromaSubSampling";
-import {ColorSpace} from "../../../src/qualifiers/colorSpace";
-import {AudioFrequency} from "../../../src/qualifiers/audioFrequency";
-import {OutlineMode} from "../../../src/qualifiers/outlineMode";
-import {FontWeight} from "../../../src/qualifiers/fontWeight";
-import {FontHinting} from "../../../src/qualifiers/fontHinting";
-import {TextAlignment} from "../../../src/qualifiers/textAlignment";
-import {ArtisticFilter} from "../../../src/qualifiers/artisticFilter";
-import {AudioCodec} from "../../../src/qualifiers/audioCodec";
-import {SimulateColorBlind} from "../../../src/qualifiers/simulateColorBlind";
-import {FontAntialias} from "../../../src/qualifiers/FontAntialias";
+import {TextDecoration} from "../../../src/MediaEditing/qualifiers/textDecoration";
+import {Dither} from "../../../src/MediaEditing/qualifiers/dither";
+import {FontStyle} from "../../../src/MediaEditing/qualifiers/fontStyle";
+import {StreamingProfile} from "../../../src/MediaEditing/qualifiers/streamingProfile";
+import {ChromaSubSampling} from "../../../src/MediaEditing/qualifiers/chromaSubSampling";
+import {ColorSpace} from "../../../src/MediaEditing/qualifiers/colorSpace";
+import {AudioFrequency} from "../../../src/MediaEditing/qualifiers/audioFrequency";
+import {OutlineMode} from "../../../src/MediaEditing/qualifiers/outlineMode";
+import {FontWeight} from "../../../src/MediaEditing/qualifiers/fontWeight";
+import {FontHinting} from "../../../src/MediaEditing/qualifiers/fontHinting";
+import {TextAlignment} from "../../../src/MediaEditing/qualifiers/textAlignment";
+import {ArtisticFilter} from "../../../src/MediaEditing/qualifiers/artisticFilter";
+import {AudioCodec} from "../../../src/MediaEditing/qualifiers/audioCodec";
+import {SimulateColorBlind} from "../../../src/MediaEditing/qualifiers/simulateColorBlind";
+import {FontAntialias} from "../../../src/MediaEditing/qualifiers/FontAntialias";
 
 describe('Test imported qualifiers', () => {
   it('Generates a URL', () => {
