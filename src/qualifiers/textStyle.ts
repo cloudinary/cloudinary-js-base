@@ -23,6 +23,7 @@ class TextStyle {
   private _textDecoration: string;
   private _textAlignment: string;
   private _stroke: boolean;
+  private _strokeStyle: string;
   private _fontHinting: string;
 
   /**
@@ -127,7 +128,10 @@ class TextStyle {
   /**
    * @description Whether to include an outline stroke. Set the color and weight of the stroke
    */
-  stroke(): this {
+  stroke(textStroke?: string): this {
+    if(textStroke) {
+      this._strokeStyle = textStroke;
+    }
     this._stroke = true;
     return this;
   }
@@ -140,6 +144,7 @@ class TextStyle {
       this._textDecoration !== normalTextDecoration() && this._textDecoration,
       this._textAlignment,
       this._stroke && 'stroke',
+      this._strokeStyle,
       this._letterSpacing && `letter_spacing_${this._letterSpacing}`,
       this._lineSpacing && `line_spacing_${this._lineSpacing}`,
       this._fontAntialias && `antialias_${this._fontAntialias}`,

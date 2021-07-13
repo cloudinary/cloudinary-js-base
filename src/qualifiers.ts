@@ -31,11 +31,13 @@ import {StreamingProfile} from "./qualifiers/streamingProfile";
 import {TextAlignment} from "./qualifiers/textAlignment";
 import {TextDecoration} from "./qualifiers/textDecoration";
 import {GradientFade} from "./qualifiers/GradientFade";
+import {Stroke} from "./qualifiers/textStroke";
 
 
 const Qualifiers = {
   TextDecoration,
   TextAlignment,
+  Stroke,
   StreamingProfile,
   SimulateColorBlind,
   RotationMode,
